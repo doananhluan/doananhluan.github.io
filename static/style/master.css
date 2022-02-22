@@ -875,9 +875,9 @@
     }
     
     .filmroll {
-        height: 640px;
-        width: 70%;
-        background-image: url('../img/roll_of_film3.png');
+        height: 680px;
+        width: 100%;
+        background-image: url('../img/film_bg.jpg');
         background-size: cover;
         margin: auto;
         filter: grayscale(100%);
