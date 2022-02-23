@@ -16,8 +16,7 @@
     }
     
     a:hover {
-        color: #bc6f22;
-        text-decoration: none;
+        color: #d9832e text-decoration: none;
     }
     
     img {
@@ -153,6 +152,10 @@
     
     .theme-color {
         color: #d9832e;
+    }
+    
+    .theme-color1 {
+        color: #e9530e;
     }
     
     .green-color {
@@ -376,7 +379,7 @@
             color: #2D2E2E;
         }
         .header-nav.header-white .navbar-brand {
-            color: #2D2E2E;
+            color: #ffffff;
         }
         .fixed-header .header-nav.header-white .navbar-brand {
             color: #fff;
@@ -427,24 +430,16 @@
         display: inline-block;
         animation: down 1s linear infinite;
         -webkit-animation: down 1.3s linear infinite;
-        color: #000
+        color: #fff
     }
-    /* .home-banner-02 .go-to-next a span {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border-top: 1px solid #090a0c;
-    border-right: 1px solid #090a0c;
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-} */
+    
+    .background {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bokeh.jpg.jpg'); */
+        background-image: url('../img/tomasz-sroka-CewT9iFBcgE-unsplash.jpg');
+    }
     /* effect blind 
 ----------------------*/
     
@@ -813,7 +808,7 @@
     
     .hello {
         height: 200px;
-        margin-top: 100px;
+        margin-top: 350px;
         text-align: center;
     }
     
@@ -826,8 +821,8 @@
     }
     
     .hello p {
-        font-size: 45px;
-        color: #000;
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.5);
         font-family: 'Segoe UI';
         font-weight: lighter;
         font-variant: normal;
@@ -867,11 +862,10 @@
     }
     
     .line {
-        height: 1px;
+        height: 4px;
         width: 60px;
-        background-color: #ec11a3;
+        background-color: #d9832e;
         margin-bottom: 40px;
-        margin-left: 30px;
     }
     
     .filmroll {
