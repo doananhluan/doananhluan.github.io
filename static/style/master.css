@@ -97,9 +97,8 @@
         width: 46px;
         height: 46px;
         margin: 1px;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
-        border-color: #ffffff transparent #ffffff transparent;
+        border: 2px solid #d9832e;
+        border-color: #d9832e transparent #d9832e transparent;
         animation: lds-dual-ring 1.2s linear infinite;
     }
     
@@ -868,15 +867,16 @@
     }
     
     .line {
-        height: 3px;
+        height: 1px;
         width: 60px;
-        background-color: #E0A80D;
+        background-color: #ec11a3;
         margin-bottom: 40px;
+        margin-left: 30px;
     }
     
     .filmroll {
-        height: 680px;
-        width: 100%;
+        height: 1080px;
+        width: auto;
         background-image: url('../img/film_bg.jpg');
         background-size: cover;
         margin: auto;
@@ -893,7 +893,7 @@
         .filmroll {
             height: 450px;
             width: 90%;
-            background-image: url('../img/roll_of_film3.png');
+            background-image: url('../img/film_bg.jpg');
             background-size: cover;
         }
     }
@@ -925,4 +925,25 @@
         letter-spacing: 1px;
         font-size: 16px;
         font-weight: 200;
+    }
+    
+    .icon_bg {
+        height: 200px;
+        width: 60%;
+        background-color: #81f1e7;
+    }
+    
+    .icon_left {
+        height: 200px;
+        width: 100px;
+        float: left;
+        background-color: #11e279;
+        font-size: 90px;
+    }
+    
+    .icon_text {
+        height: 200px;
+        width: 200px;
+        background-color: #e9530e;
+        float: left;
     }
