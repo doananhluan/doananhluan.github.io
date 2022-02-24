@@ -438,7 +438,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         /* background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bokeh.jpg.jpg'); */
-        background-image: url('../img/tomasz-sroka-CewT9iFBcgE-unsplash.jpg');
+        background-image: url('../img/camera_lens2.jpg');
     }
     /* effect blind 
 ----------------------*/
@@ -862,7 +862,7 @@
     }
     
     .line {
-        height: 4px;
+        height: 3px;
         width: 60px;
         background-color: #d9832e;
         margin-bottom: 40px;
@@ -941,3 +941,11 @@
         background-color: #e9530e;
         float: left;
     }
+    /* .button {
+        height: 50px;
+        width: 200px;
+        background-color: #cecece;
+        margin-top: -50px;
+        text-align: center;
+        font-size: 30px;
+    } */
