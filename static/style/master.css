@@ -16,7 +16,7 @@
     }
     
     a:hover {
-        color: #d9832e text-decoration: none;
+        color: #d9832e;
     }
     
     img {
@@ -433,12 +433,12 @@
         color: #fff
     }
     
-    .background {
+    .background_main {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bokeh.jpg.jpg'); */
-        background-image: url('../img/camera_lens2.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 10, 0, 0.7)), url('../img/nishaan-ahmed-_JXAktDrk-U-unsplash.jpg');
+        /* background-image: url('../img/nishaan-ahmed-_JXAktDrk-U-unsplash.jpg'); */
     }
     /* effect blind 
 ----------------------*/
@@ -823,10 +823,10 @@
     .hello p {
         font-size: 40px;
         color: rgba(255, 255, 255, 0.5);
-        font-family: 'Segoe UI';
-        font-weight: lighter;
+        font-family: 'Poppins';
         font-variant: normal;
         text-align: center;
+        text-transform: uppercase;
     }
     
     @media (max-width: 767px) {
@@ -838,7 +838,6 @@
     
     .hello:hover p {
         color: #fff;
-        font-family: 'Segoe UI';
         -moz-transition: ease all 0.8s;
         -o-transition: ease all 0.8s;
         -webkit-transition: ease all 0.8s;
@@ -869,7 +868,7 @@
     }
     
     .filmroll {
-        height: 1080px;
+        height: 1000px;
         width: auto;
         background-image: url('../img/film_bg.jpg');
         background-size: cover;
