@@ -892,8 +892,8 @@
     
     @media (max-width: 767px) {
         .filmroll {
-            height: 870px;
-            background-image: url('../img/film_doc.jpg');
+            height: 560px;
+            background-image: url('../img/film_doc2.jpg');
             background-size: cover;
         }
     }
