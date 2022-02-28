@@ -96,9 +96,10 @@
         width: 46px;
         height: 46px;
         margin: 1px;
-        border: 2px solid #d9832e;
-        border-color: #d9832e transparent #d9832e transparent;
+        border: 2px solid #ffffff;
+        border-color: #1155d4 transparent #d9832e transparent;
         animation: lds-dual-ring 1.2s linear infinite;
+        border-radius: 50%;
     }
     
     @keyframes lds-dual-ring {
@@ -122,6 +123,10 @@
     
     .gray-bg {
         background-color: #2D2E2E;
+    }
+    
+    .brown-bg {
+        background-color: #261E1D;
     }
     
     .white-bg {
@@ -209,6 +214,7 @@
     
     .mob-header .navbar-brand {
         font-size: 20px;
+        letter-spacing: 1px;
     }
     
     .mob-header .navbar-brand a {
@@ -353,10 +359,12 @@
         .header-white .navbar-nav .nav-link.active,
         .header-white .navbar-nav .nav-link:hover {
             color: #ffffff;
+            transition: 0.5s ease-out;
         }
         .fixed-header .header-white .navbar-nav .nav-link.active,
         .fixed-header .header-white .navbar-nav .nav-link:hover {
             color: #d9832e;
+            transition: 0.5s ease-out;
         }
     }
     /* Mobile 
@@ -437,7 +445,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 10, 0, 0.7)), url('../img/nishaan-ahmed-_JXAktDrk-U-unsplash.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 10, 0, 0.5)), url('../img/hieu-do-6fbBAd18FKY-unsplash.jpg');
         /* background-image: url('../img/nishaan-ahmed-_JXAktDrk-U-unsplash.jpg'); */
     }
     /* effect blind 
@@ -822,7 +830,7 @@
     
     .hello p {
         font-size: 40px;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgb(255, 255, 255);
         font-family: 'Poppins';
         font-variant: normal;
         text-align: center;
@@ -947,3 +955,17 @@
         text-align: center;
         font-size: 30px;
     } */
+    
+    .khung_chu {
+        height: 200px;
+        margin-top: 350px;
+        text-align: center;
+    }
+    
+    .khung_chu p {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        font-family: 'Poppins';
+        font-variant: normal;
+        text-align: center;
+    }
