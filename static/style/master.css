@@ -97,7 +97,7 @@
         height: 46px;
         margin: 1px;
         border: 2px solid #ffffff;
-        border-color: #1155d4 transparent #d9832e transparent;
+        border-color: #0f4ec2 transparent #d9832e transparent;
         animation: lds-dual-ring 1.2s linear infinite;
         border-radius: 50%;
     }
@@ -958,22 +958,51 @@
     } */
     
     .khung_chu {
-        height: 500px;
+        height: 550px;
         width: auto;
         text-align: center;
         background-image: url('../img/andrew-winkler-A_JJqMgd9R0-unsplash.jpg');
         background-size: cover;
-        margin-top: 30px;
+        margin-top: 10px;
+        border: 10px solid #ffffff;
     }
     
     @media (max-width: 767px) {
         .khung_chu {
-            height: 600px;
+            height: 550px;
             background-image: url('../img/andrew-winkler-A_JJqMgd9R0-unsplash.jpg');
             background-size: cover;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 10px
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .khung_chu .signature p {
+            text-align: center;
+            font-size: 18px
         }
     }
     
     .khung_bu {
         width: auto;
+    }
+    
+    .signature {
+        height: 50px;
+        width: auto;
+        background-color: #ffffff;
+        text-align: center;
+        margin-top: 490px;
+    }
+    
+    .signature p {
+        font-size: 20px;
+        text-align: center;
+        color: #303030;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-variant: normal;
+        bottom: 0;
     }
