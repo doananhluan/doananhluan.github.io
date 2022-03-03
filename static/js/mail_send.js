@@ -67,7 +67,7 @@ function send_mail() {
                 Subject: subject,
                 Body: message,
             })
-            setTimeout(() => { alert("send ok.") }, 500)
+            setTimeout(() => { alert("Email Sent successfully") }, 500)
 
 
         }

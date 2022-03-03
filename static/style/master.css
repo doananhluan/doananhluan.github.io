@@ -715,20 +715,20 @@
         transform: scale(1.1);
         transition: transform .5s, filter 1.3s ease-in-out;
     }
-    /* Contact Us
+    /* Contact
 ------------------*/
     
     .contact-form {
         border-radius: 5px;
         background: #2D2E2E;
         padding: 5%;
+        border: 2px solid #d9832e;
     }
     
     .contact-form h4 {
         font-weight: 600;
         font-size: 18px;
         text-transform: uppercase;
-        color: #090a0c;
         margin-bottom: 20px;
     }
     
@@ -752,11 +752,10 @@
     
     .contact-form .form-group .form-control {
         border: none;
-        border-bottom: 1px solid #ccc;
-        border-radius: 0;
-        padding-left: 0;
+        padding-left: 5px;
         box-shadow: none;
         font-size: 14px;
+        background-color: #fff;
     }
     
     .contact-form .form-group .form-control.invalid {
@@ -801,7 +800,7 @@
     .contact-info .media-body h6 {
         font-size: 15px;
         font-weight: 500;
-        color: #090a0c;
+        color: #0c0c09;
         margin-bottom: 8px;
     }
     
