@@ -3,6 +3,7 @@ function send_mail() {
     var email = jQuery("#email").val();
     var subject = jQuery("#subject").val();
     var message = jQuery("#message").val();
+    var receiver = jQuery("#mail_to").val();
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var flag = 0;
     if (name == "") {
@@ -21,20 +22,21 @@ function send_mail() {
     } else if (!email.match(mailformat)) {
         jQuery("#email").addClass('invalid');
         jQuery("#val_user_email").html("Please Enter Valid Email");
-        flag = 1;
+        flag = 2;
     } else {
         jQuery("#email").removeClass('invalid');
         jQuery("#val_user_email").html("");
     }
 
-    if (subject == "") {
-        jQuery("#subject").addClass('invalid');
-        jQuery("#val_subject").html("Subject is Required");
-        flag = 1;
-    } else {
-        jQuery("#subject").removeClass('invalid');
-        jQuery("#val_subject").html("");
-    }
+    // if (subject == "") {
+    //     jQuery("#subject").addClass('invalid');
+    //     jQuery("#val_subject").html("Subject is Required");
+    //     flag = 1;
+    // } else {
+    //     jQuery("#subject").removeClass('invalid');
+    //     jQuery("#val_subject").html("");
+    // }
+
     if (message == "") {
         jQuery("#message").addClass('invalid');
         jQuery("#val_message").html("Please Describe your thoughts");
@@ -45,29 +47,29 @@ function send_mail() {
     }
 
     if (flag == 1) {
-        return false;
-    }
+        setTimeout(() => { alert("Please enter full information.") }, 500)
+    } else {
+        if (flag == 2) {
+            setTimeout(() => { alert("Please enter correct email format.") }, 500)
+        } else {
 
-    var data = {
-        "name": name,
-        "email": email,
-        "subject": subject,
-        "message": message,
-    };
+            // checkBtn.addEventListener("click", e => { //tạm bỏ
+            //preventing button from it's default behaviour
+            //adding space after each character of user entered values because I've added spaces while generating captcha
+            //if captcha matched
 
-    jQuery.ajax({
-        type: "POST",
-        crossOrigin: true,
-        url: "process_form.php",
-        data: data,
-        success: function(response) {
-            if (response == '1') {
-                jQuery('#suce_message').show();
-                jQuery("#contact-form")[0].reset();
-            } else {
-                jQuery('#err_message').show();
-            }
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "kay.mailserver@gmail.com",
+                Password: "occignczmssovelf",
+                To: receiver,
+                From: email,
+                Subject: subject,
+                Body: message,
+            })
+            setTimeout(() => { alert("send ok.") }, 500)
+
+
         }
-    });
-
+    }
 }

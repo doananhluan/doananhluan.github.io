@@ -577,25 +577,22 @@
     /* Portfolio
 ------------------*/
     
-    .portfolio-content {
-        margin-left: -10px;
-        shape-margin: -10px;
+    .framegallery {
+        width: 100%;
     }
     
-    .portfolio-content .grid-item {
-        padding: 10px;
-        width: calc(100% / 3);
-        float: left;
+    .grid-item {
+        margin-top: 10px;
     }
     
     @media (max-width: 991px) {
-        .portfolio-content .grid-item {
+        .grid-item {
             width: calc(100% / 2);
         }
     }
     
     @media (max-width: 567px) {
-        .portfolio-content .grid-item {
+        .grid-item {
             width: 100%;
         }
     }
@@ -603,7 +600,7 @@
     .portfolio-box-01 {
         position: relative;
         overflow: hidden;
-        border-radius: 5px;
+        border-radius: 3px;
     }
     
     .portfolio-box-01 .link-overlay {
@@ -624,7 +621,7 @@
         -o-transition: ease all 0.35s;
         -webkit-transition: ease all 0.35s;
         transition: ease all 0.35s;
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
     }
     
     .portfolio-box-01 .portfolio-info {
@@ -707,6 +704,7 @@
     
     .portfolio-box-01:hover .portfolio-info span {
         left: 0;
+        color: #d9832e;
     }
     
     .portfolio-box-01:hover img {
@@ -716,14 +714,13 @@
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         transition: transform .5s, filter 1.3s ease-in-out;
-        filter: grayscale(0);
     }
     /* Contact Us
 ------------------*/
     
     .contact-form {
         border-radius: 5px;
-        background: #ffffff;
+        background: #2D2E2E;
         padding: 5%;
     }
     
@@ -795,7 +792,7 @@
         text-align: center;
         border-radius: 50%;
         color: #ffffff;
-        background: #d9832e;
+        background: #172402;
         font-size: 19px;
         line-height: 40px;
         margin-right: 20px;
@@ -867,15 +864,15 @@
         color: #ffffff;
     }
     
-    .line {
+    .underline {
         height: 3px;
         width: 60px;
         background-color: #d9832e;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     
     .filmroll {
-        height: 1000px;
+        height: 800px;
         width: auto;
         background-image: url('../img/film_bg.jpg');
         background-size: cover;
@@ -961,7 +958,7 @@
         height: 550px;
         width: auto;
         text-align: center;
-        background-image: url('../img/andrew-winkler-A_JJqMgd9R0-unsplash.jpg');
+        background-image: url('../img/patrick-tomasso-n-vxsHr9jZA-unsplash\ \(1\).jpg');
         background-size: cover;
         margin-top: 10px;
         border: 10px solid #ffffff;
@@ -970,7 +967,7 @@
     @media (max-width: 767px) {
         .khung_chu {
             height: 550px;
-            background-image: url('../img/andrew-winkler-A_JJqMgd9R0-unsplash.jpg');
+            background-image: url('../img/patrick-tomasso-n-vxsHr9jZA-unsplash\ \(1\).jpg');
             background-size: cover;
             margin-bottom: 15px;
             text-align: center;
