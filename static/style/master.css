@@ -819,7 +819,7 @@
     }
     /* welcome */
     
-    .typewriter {
+    .hello {
         height: 50px;
         margin-top: 350px;
         text-align: center;
@@ -828,14 +828,14 @@
     }
     
     @media (max-width: 767px) {
-        .typewriter {
+        .hello {
             height: 50px;
             margin-top: 200px;
             text-align: center;
         }
     }
     
-    .typewriter p {
+    .hello p {
         font-size: 40px;
         color: rgb(255, 255, 255);
         font-family: 'Poppins';
@@ -876,7 +876,7 @@
     }
     
     @media (max-width: 767px) {
-        .typewriter p {
+        .hello p {
             font-size: 20px;
             color: rgb(255, 255, 255);
             font-family: 'Poppins';
@@ -900,7 +900,7 @@
                 width: 0
             }
             to {
-                width: 92%
+                width: 90%
             }
         }
         /* The typewriter cursor effect */
