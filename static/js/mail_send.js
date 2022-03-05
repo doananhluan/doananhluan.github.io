@@ -28,14 +28,25 @@ function send_mail() {
         jQuery("#val_user_email").html("");
     }
 
-    // if (subject == "") {
-    //     jQuery("#subject").addClass('invalid');
-    //     jQuery("#val_subject").html("Subject is Required");
-    //     flag = 1;
-    // } else {
-    //     jQuery("#subject").removeClass('invalid');
-    //     jQuery("#val_subject").html("");
-    // }
+    if (subject == "") {
+        jQuery("#mail_to").addClass('invalid');
+        jQuery("#val_mail_to").html("Subject is Required");
+        flag = 1;
+    } else {
+        jQuery("#mail_to").removeClass('invalid');
+        jQuery("#val_mail_to").html("");
+    }
+
+
+
+    if (subject == "") {
+        jQuery("#subject").addClass('invalid');
+        jQuery("#val_subject").html("Subject is Required");
+        flag = 1;
+    } else {
+        jQuery("#subject").removeClass('invalid');
+        jQuery("#val_subject").html("");
+    }
 
     if (message == "") {
         jQuery("#message").addClass('invalid');
