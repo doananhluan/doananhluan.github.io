@@ -862,13 +862,15 @@
         height: 50px;
         text-align: center;
         margin-top: 60px;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
     }
     
     @media (max-width: 767px) {
         .hello {
-            height: 50px;
+            height: 24px;
             text-align: center;
             margin-top: 50px;
+            -webkit-box-reflect: below 2px linear-gradient(transparent, #0004);
         }
     }
     
@@ -876,6 +878,7 @@
         width: auto;
         margin-top: 300px;
         text-align: center;
+        /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0001); */
     }
     
     @media (max-width: 767px) {
@@ -912,7 +915,6 @@
         font-weight: lighter;
         text-align: center;
         width: max-content;
-        /* position: relative; */
         overflow: hidden;
         /* Ensures the content is not revealed until the animation */
         border-right: 2px solid rgb(255, 255, 255);
@@ -924,7 +926,6 @@
         letter-spacing: 2px;
         /* Adjust as needed */
         animation: typing 4.5s steps(22) forwards, blink 750ms steps(22) infinite;
-        ;
     }
     /* The typing effect */
     
@@ -941,7 +942,7 @@
     @keyframes blink {
         from,
         to {
-            border-color: transparent
+            border-color: transparent;
         }
         50% {
             border-color: rgb(255, 255, 255)
@@ -967,7 +968,7 @@
             /* Gives that scrolling effect as the typing happens */
             letter-spacing: 2px;
             /* Adjust as needed */
-            animation: typing 4.5s steps(22, end) forwards, blink 750ms steps(22) infinite;
+            animation: typing 4.5s steps(22) forwards, blink 750ms steps(22) infinite;
         }
         /* The typing effect */
         @keyframes typing {
@@ -985,7 +986,7 @@
                 border-color: transparent
             }
             50% {
-                border-color: orange
+                border-color: rgb(255, 255, 255)
             }
         }
     }
