@@ -93,25 +93,10 @@
     
     .ring {
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         animation: ring 2s linear infinite;
-    }
-    
-    @keyframes ring {
-        0% {
-            transform: rotate(0deg);
-            box-shadow: 1px 5px 2px #e65c00;
-        }
-        50% {
-            transform: rotate(180deg);
-            box-shadow: 1px 5px 2px #18b201;
-        }
-        100% {
-            transform: rotate(360deg);
-            box-shadow: 1px 5px 2px #0456c8;
-        }
     }
     
     .ring::before {
@@ -122,25 +107,38 @@
         height: 100%;
         width: 100%;
         border-radius: 50%;
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+    
+    @keyframes ring {
+        0% {
+            transform: rotate(0deg);
+            box-shadow: 1px 1px 1px #f1c40f;
+        }
+        50% {
+            transform: rotate(180deg);
+            box-shadow: 1px 1px 1px #2ecc71;
+        }
+        100% {
+            transform: rotate(360deg);
+            box-shadow: 1px 1px 1px #3498db;
+        }
     }
     
     .text_center h5 {
         color: #737373;
-        font-size: 20px;
+        font-size: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        line-height: 200px;
-        animation: text 3s ease-in-out infinite;
+        line-height: 100px;
+        animation: text 2s infinite ease-in-out;
     }
     
     @keyframes text {
         50% {
-            color: black;
+            color: rgb(51, 51, 51);
         }
     }
-    /* Background color
--------------------------------*/
+    /* Background color */
     
     .theme-bg {
         background-color: #d9832e;
@@ -882,7 +880,7 @@
     /* welcome */
     
     .hello {
-        height: 50px;
+        height: 55px;
         text-align: center;
         margin-top: 60px;
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
@@ -890,7 +888,7 @@
     
     @media (max-width: 767px) {
         .hello {
-            height: 24px;
+            height: 28px;
             text-align: center;
             margin-top: 50px;
             -webkit-box-reflect: below 2px linear-gradient(transparent, #0004);
@@ -984,7 +982,7 @@
             overflow: hidden;
             transform: translateY(-50%);
             position: relative;
-            top: 60px;
+            top: 70px;
             border-right: 2px solid rgb(255, 255, 255);
             white-space: nowrap;
             margin: 0 auto;
@@ -999,7 +997,7 @@
                 width: 0
             }
             to {
-                width: 76%
+                width: 74%
             }
         }
         /* The typewriter cursor effect */
