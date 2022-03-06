@@ -75,45 +75,68 @@
         left: 0;
         right: 0;
         bottom: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         background: #222222;
         z-index: 99999;
     }
     
-    .load-circle {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        width: 50px;
-        height: 50px;
+    .text_center {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        min-height: 50px;
     }
     
-    .load-circle span {
-        display: inline-block;
-        width: 64px;
-        height: 64px;
-    }
-    
-    .load-circle span:after {
-        content: " ";
-        display: block;
-        width: 46px;
-        height: 46px;
-        margin: 1px;
-        border: 2px solid #ffffff;
-        border-color: #0f4ec2 transparent #d9832e transparent;
-        animation: lds-dual-ring 1.2s linear infinite;
+    .ring {
+        position: absolute;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
+        animation: ring 2s linear infinite;
     }
     
-    @keyframes lds-dual-ring {
+    @keyframes ring {
         0% {
             transform: rotate(0deg);
+            box-shadow: 1px 5px 2px #e65c00;
+        }
+        50% {
+            transform: rotate(180deg);
+            box-shadow: 1px 5px 2px #18b201;
         }
         100% {
             transform: rotate(360deg);
+            box-shadow: 1px 5px 2px #0456c8;
+        }
+    }
+    
+    .ring::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+    
+    .text_center h5 {
+        color: #737373;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 200px;
+        animation: text 3s ease-in-out infinite;
+    }
+    
+    @keyframes text {
+        50% {
+            color: black;
         }
     }
     /* Background color
@@ -906,7 +929,7 @@
         }
     }
     
-    .hello h6 {
+    .hello {
         font-size: 40px;
         color: rgb(255, 255, 255);
         font-family: 'Poppins';
@@ -916,18 +939,19 @@
         text-align: center;
         width: max-content;
         overflow: hidden;
-        /* Ensures the content is not revealed until the animation */
+        transform: translateY(-50%);
+        position: relative;
+        top: 40px;
         border-right: 2px solid rgb(255, 255, 255);
-        /* The typwriter cursor */
         white-space: nowrap;
-        /* Keeps the content on a single line */
         margin: 0 auto;
-        /* Gives that scrolling effect as the typing happens */
         letter-spacing: 2px;
-        /* Adjust as needed */
-        animation: typing 4.5s steps(22) forwards, blink 750ms steps(22) infinite;
     }
     /* The typing effect */
+    
+    .typing_text {
+        animation: typing 4s steps(22) 1s 1 normal both, blink 500ms steps(22) infinite normal;
+    }
     
     @keyframes typing {
         from {
@@ -950,25 +974,24 @@
     }
     
     @media (max-width: 767px) {
-        .hello h6 {
+        .hello {
             font-size: 20px;
             color: rgb(255, 255, 255);
             font-family: 'Poppins';
             font-variant: normal;
             text-align: center;
             width: max-content;
-            /* position: relative; */
             overflow: hidden;
-            /* Ensures the content is not revealed until the animation */
-            border-right: 2px solid orange;
-            /* The typwriter cursor */
+            transform: translateY(-50%);
+            position: relative;
+            top: 60px;
+            border-right: 2px solid rgb(255, 255, 255);
             white-space: nowrap;
-            /* Keeps the content on a single line */
             margin: 0 auto;
-            /* Gives that scrolling effect as the typing happens */
             letter-spacing: 2px;
-            /* Adjust as needed */
-            animation: typing 4.5s steps(22) forwards, blink 750ms steps(22) infinite;
+        }
+        .typing_text {
+            animation: typing 4s steps(22) 1s 1 normal both, blink 500ms steps(22) infinite normal;
         }
         /* The typing effect */
         @keyframes typing {
@@ -976,14 +999,14 @@
                 width: 0
             }
             to {
-                width: 79%
+                width: 76%
             }
         }
         /* The typewriter cursor effect */
         @keyframes blink {
             from,
             to {
-                border-color: transparent
+                border-color: transparent;
             }
             50% {
                 border-color: rgb(255, 255, 255)
