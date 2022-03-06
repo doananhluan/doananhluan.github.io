@@ -33,8 +33,9 @@
     /* ROOT */
     
      :root {
-        --typingcharacter: 22;
+        --typecharacter: 22;
         --typingspeed: 4.5s;
+        --textcolor: rgb(255, 255, 255);
     }
     
     mark {
@@ -880,10 +881,10 @@
     /* welcome */
     
     .hello {
-        height: 55px;
+        height: 50px;
         text-align: center;
         margin-top: 60px;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
     }
     
     @media (max-width: 767px) {
@@ -948,7 +949,7 @@
     /* The typing effect */
     
     .typing_text {
-        animation: typing 4s steps(22) 1s 1 normal both, blink 500ms steps(22) infinite normal;
+        animation: typing 4s steps(22) 1.5s 1 normal both, blink 750ms steps(22) infinite normal;
     }
     
     @keyframes typing {
@@ -1034,7 +1035,7 @@
         text-transform: uppercase;
         font-family: 'Poppins', sans-serif;
         font-weight: 400px;
-        color: #fff;
+        color: var(--textcolor);
         position: relative;
         overflow: hidden;
         width: max-content;
