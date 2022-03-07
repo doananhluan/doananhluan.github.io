@@ -455,7 +455,7 @@
     
     .go-to-next {
         position: absolute;
-        bottom: 70px;
+        bottom: 65px;
         left: 0;
         right: 0;
         width: 35px;
@@ -1028,13 +1028,13 @@
     }
     /* PERSONAL */
     
-    .personal-frame-main {
-        height: 500px;
-        background-color: #2ecc71;
+    .personal-frame {
+        height: 600px;
+        background-color: #2c2c2c;
     }
     
     .personal-pic {
-        margin-top: 80px;
+        margin-top: 100px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1046,12 +1046,18 @@
     }
     
     .personal-text {
-        margin-top: 80px;
+        margin-top: 100px;
         font-family: 'Poppins', sans-serif;
         color: white;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    
+    .personal-text h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
     }
     /* Heading 1 */
     
