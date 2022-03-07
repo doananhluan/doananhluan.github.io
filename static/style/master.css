@@ -881,9 +881,10 @@
     /* welcome */
     
     .hello {
-        height: 50px;
+        height: 53px;
         text-align: center;
         margin-top: 60px;
+        width: max-content;
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
     }
     
@@ -892,6 +893,7 @@
             height: 28px;
             text-align: center;
             margin-top: 50px;
+            width: max-content;
             -webkit-box-reflect: below 2px linear-gradient(transparent, #0004);
         }
     }
@@ -921,7 +923,7 @@
     
     @media (max-width: 767px) {
         .hello_tittle h2 {
-            font-size: 30px;
+            font-size: 25px;
             color: rgb(255, 255, 255);
             font-family: 'Poppins';
             padding: 40px, 0px, 0px, 0px;
@@ -936,7 +938,7 @@
         font-weight: 300px;
         font-weight: lighter;
         text-align: center;
-        width: max-content;
+        width: 470px;
         overflow: hidden;
         transform: translateY(-50%);
         position: relative;
@@ -944,12 +946,13 @@
         border-right: 2px solid rgb(255, 255, 255);
         white-space: nowrap;
         margin: 0 auto;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     /* The typing effect */
     
     .typing_text {
         animation: typing 4s steps(22) 1.5s 1 normal both, blink 750ms steps(22) infinite normal;
+        width: max-content;
     }
     
     @keyframes typing {
@@ -957,7 +960,7 @@
             width: 0
         }
         to {
-            width: 45%
+            width: 470px;
         }
     }
     /* The typewriter cursor effect */
@@ -981,6 +984,7 @@
             text-align: center;
             width: max-content;
             overflow: hidden;
+            width: 270px;
             transform: translateY(-50%);
             position: relative;
             top: 70px;
@@ -998,7 +1002,7 @@
                 width: 0
             }
             to {
-                width: 74%
+                width: 270px;
             }
         }
         /* The typewriter cursor effect */
