@@ -1121,6 +1121,8 @@
         margin: auto;
         filter: grayscale(100%);
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
     .filmroll:hover {
@@ -1135,6 +1137,9 @@
             width: auto;
             background-image: url('../img/film_bg.jpg');
             background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
     
@@ -1143,6 +1148,9 @@
             height: 560px;
             background-image: url('../img/film_doc2.jpg');
             background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
     /* frame_2 */
