@@ -455,12 +455,11 @@
     
     .go-to-next {
         position: absolute;
-        bottom: 65px;
+        bottom: 70px;
         left: 0;
         right: 0;
         width: 35px;
         margin: auto;
-        z-index: 1;
         text-align: center;
         font-size: 35px;
     }
@@ -1146,7 +1145,7 @@
     @media (max-width: 767px) {
         .filmroll {
             height: 560px;
-            background-image: url('../img/film_doc2.jpg');
+            background-image: url('../img/roll_of_film_doc.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
