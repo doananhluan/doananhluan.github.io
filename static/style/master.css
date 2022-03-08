@@ -1051,12 +1051,21 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-color: rgb(77, 50, 9);
     }
     
     .personal-text h2 {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 30px;
+    }
+    
+    .textleft {
+        background-color: #2ecc71;
+    }
+    
+    .textright {
+        background-color: #094421;
     }
     /* Heading 1 */
     
@@ -1133,7 +1142,7 @@
     @media (max-width: 1024px) {
         .filmroll {
             height: 800px;
-            width: auto;
+            max-width: 100%;
             background-image: url('../img/film_bg.jpg');
             background-size: cover;
             background-attachment: fixed;
@@ -1145,6 +1154,7 @@
     @media (max-width: 767px) {
         .filmroll {
             height: 560px;
+            max-width: 100%;
             background-image: url('../img/roll_of_film_doc.jpg');
             background-size: cover;
             background-attachment: fixed;
