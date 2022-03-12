@@ -374,9 +374,12 @@
         /*LOGO */
         .header-white .navbar-brand {
             font-size: 24px;
-            color: #ffffff;
+            color: #fff;
             text-transform: uppercase;
             font-weight: 600;
+            outline: 2px solid white;
+            padding: 0px 10px;
+            border-radius: 5px;
         }
         /* logo scroll */
         .fixed-header .header-white .navbar-brand {
@@ -1033,15 +1036,16 @@
         background-color: #fff;
         padding: 100px, 0px;
     }
+    /* Personal interactive effect */
     
     .personal-pic {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 470px;
         overflow: hidden;
         margin: 100px 0;
         box-shadow: 0 px 15px rgb(0 0 0 / 20%);
-        border-radius: 15px;
+        border-radius: 5px;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -1058,6 +1062,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(15px);
         box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
         transition: bottom 0.5s;
@@ -1065,16 +1070,17 @@
     
     .personal-pic:hover .content {
         bottom: 0px;
+        cursor: pointer;
     }
     
-    .personal-pic .content .contentbx h5 {
+    .personal-pic .content .contentxt h5 {
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 500;
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        margin: 60px 0 15px;
+        font-size: 25px;
+        margin: 25px;
         text-align: center;
         justify-content: center;
         line-height: 1.1em;
@@ -1084,15 +1090,19 @@
         transition-delay: 0.4s;
     }
     
-    .personal-pic:hover .content .contentbx h5 {
+    .personal-pic:hover .content .contentxt h5 {
         opacity: 1;
         transform: translateY(0px);
+        cursor: pointer;
     }
     
-    .personal-pic .content .contentbx h5 span {
-        font-size: 12px;
-        font-weight: 300;
+    .personal-pic .content .contentxt h5 span {
+        font-size: 15px;
+        font-weight: 200;
         text-transform: initial;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 2px;
     }
     
     .personal-pic .content .sci {
@@ -1101,6 +1111,7 @@
         display: flex;
         text-align: center;
         justify-content: center;
+        margin-right: 50px;
     }
     
     .personal-pic .content .sci li {
@@ -1115,11 +1126,145 @@
     .personal-pic:hover .content .sci li {
         opacity: 1;
         transform: translateY(0px);
+        cursor: pointer;
     }
     
     .personal-pic .content .sci li a {
         font-size: 20px;
         color: #fff;
+    }
+    /* End Personal interactive effect */
+    /* Personal interactive effect mobile*/
+    
+    @media (max-width: 767px) {
+        .personal-pic {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            margin-top: 100px;
+            box-shadow: 0 px 15px rgb(0 0 0 / 20%);
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .personal-pic .content {
+            position: absolute;
+            bottom: -160px;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+            transition: bottom 0.5s;
+        }
+        .personal-pic .content .contentxt h5 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+            line-height: 1.1em;
+            transition: 0.5s;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-delay: 0.4s;
+        }
+        .personal-pic .content .contentxt h5 span {
+            font-size: 10px;
+            font-weight: 200;
+            text-transform: initial;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 2px;
+        }
+        .personal-pic .content .sci {
+            position: relative;
+            bottom: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-right: 50px;
+        }
+        .personal-pic .content .sci li a {
+            font-size: 15px;
+            color: #fff;
+        }
+    }
+    /* End Personal interactive effect mobile*/
+    
+    @media (max-width: 1024px) {
+        .personal-pic {
+            position: relative;
+            width: 100%;
+            height: 290px;
+            overflow: hidden;
+            margin-top: 100px;
+            box-shadow: 0 px 15px rgb(0 0 0 / 20%);
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .personal-pic .content {
+            position: absolute;
+            bottom: -160px;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+            transition: bottom 0.5s;
+        }
+        .personal-pic .content .contentxt h5 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+            line-height: 1.1em;
+            transition: 0.5s;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-delay: 0.4s;
+        }
+        .personal-pic .content .contentxt h5 span {
+            font-size: 10px;
+            font-weight: 200;
+            text-transform: initial;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 2px;
+        }
+        .personal-pic .content .sci {
+            position: relative;
+            bottom: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-right: 50px;
+        }
     }
     
     .about_fr {
@@ -1127,8 +1272,8 @@
         height: 40px;
         background-color: #f2f2f2;
         text-align: center;
-        justify-content: center;
-        margin-bottom: 30px;
+        margin: 30px 30px;
+        padding-top: 8px;
     }
     
     .about_fr p {
@@ -1145,13 +1290,18 @@
         color: var(--textcolor);
     }
     
+    .about_text p {
+        margin: 30px;
+        line-height: 2;
+    }
+    
     .personal-text p {
         color: var(--textcolor);
     }
     
     @media (max-width: 767px) {
         .personal-text {
-            margin-top: 20px;
+            margin-top: -80px;
         }
     }
     
@@ -1159,6 +1309,7 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 30px;
+        margin: 30px;
     }
     
     @media (max-width: 767px) {
@@ -1168,12 +1319,73 @@
         }
     }
     
-    .textleft {
-        background-color: none;
+    .selectbtn {
+        font-size: 15px;
+        margin: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+        width: max-content;
+        position: relative;
+        letter-spacing: 1px;
+        transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+        cursor: pointer;
+        user-select: none;
     }
     
-    .textright {
-        background-color: none;
+    .selectbtn:before,
+    .selectbtn:after {
+        content: '';
+        position: absolute;
+        transition: inherit;
+    }
+    
+    .selectbtn:hover {
+        transition-delay: .5s;
+        color: var(--main-bg);
+    }
+    
+    .selectbtn:hover:before {
+        transition-delay: 0s;
+    }
+    
+    .selectbtn:hover:after {
+        transition-delay: .35s;
+    }
+    
+    .textfr:before {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border: 1px solid var(--main-bg);
+        border-left: 0;
+        border-right: 0;
+    }
+    
+    .textfr:after {
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background: rgba(5, 197, 245, 0.185);
+    }
+    
+    .textfr:hover:before {
+        left: 0;
+        width: 100%;
+    }
+    
+    .textfr:hover:after {
+        top: 0;
+        height: 100%;
+    }
+    
+    .info-fr {
+        background-color: #a4a4a7;
+        width: auto;
+        height: 100px;
+        display: none;
+        margin: 30px;
     }
     /* Heading 1 */
     
@@ -1229,20 +1441,21 @@
     /* filmroll frame */
     
     .filmroll {
-        height: 500px;
+        height: 400px;
         width: auto;
-        background-image: url('../img/2.jpg');
+        background-image: url('../img/wallpaperbetter.jpg');
         background-size: cover;
         margin: auto;
-        filter: grayscale(50%);
-        transition: filter 1s ease-in-out;
+        filter: grayscale(80%);
+        transition: filter 1.3s ease-in-out;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     
     .filmroll:hover {
-        transition: transform .5s, filter 1.3s ease-in-out;
-        filter: grayscale(0);
+        transition: transform .5s, filter 1.5s ease-in-out;
+        filter: grayscale(10%);
         cursor: pointer;
         /* transform: scale(1.2); */
     }
@@ -1251,7 +1464,7 @@
         .filmroll {
             height: 800px;
             max-width: 100%;
-            background-image: url('../img/film_bg.jpg');
+            background-image: url('../img/wallpaperbetter.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -1260,9 +1473,9 @@
     
     @media (max-width: 767px) {
         .filmroll {
-            height: 560px;
+            height: 450px;
             max-width: 100%;
-            background-image: url('../img/14.jpg');
+            background-image: url('../img/wallpaperbetter.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -1319,6 +1532,7 @@
         margin-top: 10px;
         border: 10px solid #ffffff;
         opacity: 1;
+        margin-bottom: 100px;
     }
     
     @media (max-width: 767px) {
@@ -1329,7 +1543,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            margin-bottom: 15px;
+            margin-bottom: 100px;
             text-align: center;
         }
     }
