@@ -489,7 +489,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         user-select: none;
-        background-image: url('../img/23.jpg');
+        background-image: url('../img/beach.jpg');
         /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 10, 0, 0.8)) */
     }
     
@@ -1528,10 +1528,10 @@
         height: 550px;
         width: auto;
         text-align: center;
-        background-image: url('../img/patrick-tomasso-n-vxsHr9jZA-unsplash\ \(1\).jpg');
+        background-image: url('../img/bear.jpg');
         background-size: cover;
         margin-top: 10px;
-        border: 10px solid #ffffff;
+        /* border: 10px solid #ffffff; */
         opacity: 1;
         margin-bottom: 100px;
     }
