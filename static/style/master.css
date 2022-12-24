@@ -35,7 +35,7 @@
      :root {
         --typecharacter: 22;
         --typingspeed: 4.5s;
-        --textcolor: #686868;
+        --textcolor:#f2f2f2;
         --graybg: #141823;
         --main-bg: #628085;
     }
@@ -152,7 +152,7 @@
     }
     
     .gray-bg {
-        background-color: #f9f9f9;
+        background-color: #2D2E2E;
     }
     
     .main-bg {
@@ -489,6 +489,8 @@
         width: 100%;
         height: 100%;
         position: relative;
+        /* -webkit-filter: grayscale(20%);
+        filter: grayscale(20%); */
     }
     #content_heading_video {
         object-fit: cover;
@@ -496,6 +498,7 @@
         bottom: 0;
         z-index: 0;
         position:absolute;
+        
     }
     /* end video */
 
@@ -912,7 +915,7 @@
     
     .hello_tittle {
         width: auto;
-        margin-top: 300px;
+        margin-top: 800px;
         text-align: center;
         /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0001); */
     }
@@ -925,11 +928,11 @@
         }
     }
     
-    .hello_tittle h2 {
+    .hello_tittle h3 {
         margin: 0 auto;
         font-family: 'Poppins', sans-serif;
         letter-spacing: 2px;
-        font-size: 50px;
+        font-size: 30px;
         text-align: center;
         justify-content: center;
         text-transform: uppercase;
@@ -1048,7 +1051,7 @@
     
     .personal-frame {
         height: auto;
-        background-color: #fff;
+        background-color: #2D2E2E;
         padding: 100px, 0px;
     }
     /* Personal interactive effect */
@@ -1285,7 +1288,7 @@
     .about_fr {
         width: 100px;
         height: 40px;
-        background-color: #f2f2f2;
+        background-color: #e79418;
         text-align: center;
         margin: 30px 30px;
         padding-top: 8px;
