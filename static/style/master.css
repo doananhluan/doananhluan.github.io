@@ -471,10 +471,10 @@
         bottom: 70px;
         left: 0;
         right: 0;
-        width: 35px;
+        width: max-content;
         margin: auto;
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
     }
     
     .go-to-next a {
@@ -484,6 +484,7 @@
         -webkit-animation: down 1.3s linear infinite;
         color: #fff
     }
+    
     /* Video */
     .content-heading {
         width: 100%;
@@ -915,11 +916,23 @@
     
     .hello_tittle {
         width: auto;
-        margin-top: 800px;
+        margin-top: 300px;
         text-align: center;
         /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0001); */
     }
     
+    .hello_tittle_1 {
+        width: auto;
+        margin-top: 30px;
+        text-align: center;
+        /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0001); */
+    }
+    .hello_tittle_bottom {
+        width: auto;
+        margin-top:250px;
+        text-align: left;
+        /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0001); */
+    }
     @media (max-width: 767px) {
         .hello_tittle {
             height: 50px;
@@ -927,32 +940,67 @@
             justify-content: center;
         }
     }
-    
-    .hello_tittle h3 {
+    @media (max-width: 767px) {
+        .hello_tittle_1 {
+            height: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    .hello_tittle h2 {
         margin: 0 auto;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Playfair Display";
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.13;
         letter-spacing: 2px;
-        font-size: 30px;
+        font-size: 60px;
         text-align: center;
         justify-content: center;
         text-transform: uppercase;
-        -webkit-text-fill-color: transparent;
+        color: #fff;
+        /* -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: var(--main-bg);
+        -webkit-text-stroke-color: var(--main-bg); */
     }
-    
+    .hello_tittle_1 h2 {
+        margin: 0 auto;
+        font-family: "Playfair Display";
+        font-weight: 100;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: 6px;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #fff;
+        /* -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: var(--main-bg); */
+    }
     @media (max-width: 767px) {
         .hello_tittle h2 {
             font-size: 30px;
             color: rgb(255, 255, 255);
             text-align: center;
             margin-top: -80px;
-            -webkit-text-stroke-width: 1.2px;
+            /* -webkit-text-stroke-width: 1.2px;
             -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-color: var(--main-bg);
+            -webkit-text-stroke-color: var(--main-bg); */
         }
     }
-    
+    @media (max-width: 767px) {
+        .hello_tittle_1 h2 {
+            font-size: 10px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 50px;
+            /* -webkit-text-stroke-width: 1.2px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: var(--main-bg); */
+        }
+    }
     .hello {
         font-size: 30px;
         color: rgb(255, 255, 255);
@@ -1418,7 +1466,7 @@
     .tittle h3 {
         padding: 90px 0px 0px 0px;
         text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Playfair Display';
         font-weight: 400px;
         color: var(--textcolor);
         position: relative;
