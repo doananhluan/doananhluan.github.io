@@ -420,13 +420,13 @@
             z-index: 5;
         }
         .fixed-header .header-nav {
-            background: var(--main-bg);
+            background: #000000;
         }
         .header-nav .navbar-brand {
             font-weight: 600;
-            font-size: 24px;
+            font-size: 20px;
             color: var(--main-bg);
-            outline: 2px solid #ffff;
+            /* outline: 2px solid #ffff; */
             border-radius: 5px;
             padding: 0px 5px;
         }
@@ -508,7 +508,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         user-select: none;
-        background-image: url('../img/agfa-black-digital-photography-camera-cqf4ndt4vp19ydrs.jpg');
+        background-image: url('../img/rain.jpg');
         /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 10, 0, 0.8)) */
     }
     
@@ -931,6 +931,7 @@
         width: auto;
         margin-top:250px;
         text-align: left;
+        color: #fffF;
         /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0001); */
     }
     @media (max-width: 767px) {
@@ -1606,7 +1607,7 @@
         .khung_chu {
             height: 550px;
             width: auto;
-            background-image: url('../img/patrick-tomasso-n-vxsHr9jZA-unsplash\ \(1\).jpg');
+            background-image: url('../img/bruno-nascimento-9XTyIiFceKM-unsplash.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
