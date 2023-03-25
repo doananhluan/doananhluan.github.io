@@ -1102,14 +1102,30 @@
         -webkit-transition: ease all 0.8s;
         transition: ease all 0.8s;
     }
-/* Icon frame */
-.icon_frame{
-    background-color: #0d0d0d;
+
+/* Quote frame */
+.quote_frame{
+    background-color:#0d0d0d;
+    border: none;
 }
-.icon_top i{
-color:#e6a543;
-font-size: 50px;
+.note_quote h2{
+    font-family:'Cormorant", sans-serif' ;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 3px;
+    color:#ffff;
+    margin-top: 150px;
 }
+.note_quote h3{
+    font-family:"muli", sans-serif ;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+    /* line-height: 25px; */
+    color:#ffff;
+    margin-top: 50px;
+}
+
     /* PERSONAL */
     
     .personal-frame {
