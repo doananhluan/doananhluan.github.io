@@ -9,6 +9,12 @@
                 font-style: normal;
             }
             
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
             html {
                 overflow-x: hidden;
             }
@@ -1102,6 +1108,37 @@
                 50% {
                     border-color: rgb(255, 255, 255)
                 }
+            }
+            /*Slide wrap*/
+            
+            .slider {
+                display: flex;
+            }
+            
+            .slider-item {
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            .slider-item-one {
+                background-image: url(../img/green.jpg.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .slider-item-two {
+                background-image: url(../img/rain.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .slider-item-three {
+                background-image: url(../img/andrew-winkler-A_JJqMgd9R0-unsplash.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
             /* Quote frame */
             

@@ -31,8 +31,7 @@
     <link rel='stylesheet' href='/static/style/wow.css'>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!-- theme css -->
-    <link href="static/style/master.css" rel="stylesheet">
+
     <!-- jquery -->
     <script src="static/js/jquery-3.2.1.min.js"></script>
     <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
@@ -50,6 +49,16 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--OWL CSS link-->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!--End owl CSS link-->
+    <!--OWL JS Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!--End OWL JS Link-->
+    <!-- theme css -->
+    <link href="static/style/master.css" rel="stylesheet">
 </head>
 <!-- Body Start -->
 
@@ -87,23 +96,15 @@
     <!-- Main -->
     <main>
         <!-- slide navigation -->
-        <section class="slide_wrap">
+        <section class="slider owl-carousel owl-theme">
             <main id="home">
-                <div class="slide_main">
-                    <img src="/Images/green.jpg.jpg" title="" alt="">
+                <div class="slider-item slider-item-one">
                 </div>
-                <div class="slide_content">
-                    <div class="container">
-                        <div class="row full-screen">
-                            <div class="col-lg-12">
-                                <div class="slide_text">
-                                    <h2>Creative photography</h2>
-                                    <h3><a href="#">Explore</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="slider-item slider-item-two">
                 </div>
+                <div class="slider-item slider-item-three">
+                </div>
+
 
 
                 <!-- <div class="container"> -->
@@ -425,6 +426,37 @@
         document.getElementById("abc").style.display = "block";
         // document.getElementById("abc").style thuoc tinh css phia sau
     }
+</script>
+<!--Script owl-->
+<!-- <script>
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel();
+    });
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script> -->
+<script>
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        lazyLoad: true,
+        loop: true,
+        margin: 10
+    });
 </script>
 
 </html>
