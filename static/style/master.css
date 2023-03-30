@@ -1252,11 +1252,12 @@ a.button:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: grayscale(100);
-    border: 2px solid #ffffff;
+    /* position: relative;
+    overflow: hidden; */
 }
 
 .demo_1_info {
-    margin-top: 10px;
+    margin-top: 30px;
     width: auto;
     height: auto;
     /* background-color: #24e10f; */
@@ -1279,11 +1280,10 @@ a.button:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: grayscale(100);
-    border: 2px solid #ffffff;
 }
 
 .demo_2_info {
-    margin-top: 10px;
+    margin-top: 30px;
     width: auto;
     height: auto;
     /* background-color: #24e10f; */
@@ -1306,11 +1306,10 @@ a.button:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: grayscale(100);
-    border: 2px solid #ffffff;
 }
 
 .demo_3_info {
-    margin-top: 10px;
+    margin-top: 30px;
     width: auto;
     height: auto;
     /* background-color: #24e10f; */
@@ -1333,11 +1332,10 @@ a.button:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: grayscale(100);
-    border: 2px solid #ffffff;
 }
 
 .demo_4_info {
-    margin-top: 10px;
+    margin-top: 30px;
     width: auto;
     height: auto;
     /* background-color: #24e10f; */
@@ -1356,26 +1354,50 @@ a.button:hover {
 
 .demo_1:hover {
     opacity: 1;
-    transition: transform .5s, filter 1s ease-in-out;
     filter: grayscale(0);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 2px solid#fff;
+    transition: transform .5s, filter 1.3s ease-in-out;
 }
 
 .demo_2:hover {
     opacity: 1;
-    transition: transform .5s, filter 1s ease-in-out;
     filter: grayscale(0);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 2px solid#fff;
+    transition: transform .5s, filter 1.3s ease-in-out;
 }
 
 .demo_3:hover {
     opacity: 1;
-    transition: transform .5s, filter 1s ease-in-out;
     filter: grayscale(0);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 2px solid#fff;
+    transition: transform .5s, filter 1.3s ease-in-out;
 }
 
 .demo_4:hover {
     opacity: 1;
-    transition: transform .5s, filter 1s ease-in-out;
     filter: grayscale(0);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 2px solid#fff;
+    transition: transform .5s, filter 1.3s ease-in-out;
 }
 
 
