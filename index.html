@@ -28,8 +28,10 @@
     <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
     <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <!--main css-->
     <link rel='stylesheet' href='/static/style/wow.css'>
-
+    <!--main JS-->
+    <link rel="stylesheet" href="/static/js/master.js">
 
     <!-- jquery -->
     <script src="static/js/jquery-3.2.1.min.js"></script>
@@ -54,7 +56,8 @@
     <!--swiper css-->
     <link rel="stylesheet" href="/static/style/swiper-bundle.min.css">
     <!--end swiper css-->
-
+    <!-- Swiper JS -->
+    <script src="/static/js/swiper-bundle.min.js"></script>
     <!-- theme css -->
     <link href="static/style/master.css" rel="stylesheet">
 </head>
@@ -62,12 +65,12 @@
 
 <body data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="70">
     <!-- page loading -->
-    <div id="loading">
+    <!-- <div id="loading">
         <div class="text_center">
             <div class="ring"></div>
             <h5>loading...</h5>
         </div>
-    </div>
+    </div> -->
     <!-- end page loading -->
     <header>
         <nav class="navbar header-nav header-white navbar-expand-lg">
@@ -93,12 +96,16 @@
     </header>
     <!-- Main -->
     <main>
+        <!--go-to-top button-->
+        <div class="scrolltop" onclick="scrolltotop();">
+            <i class="fas fa-angle-up" style="color: #000"></i>
+        </div>
         <!-- slide navigation -->
         <section class="slider_main swiper mySwiper" id="home">
 
             <div class="wrapper swiper-wrapper">
                 <div class="slide swiper-slide">
-                    <img src="Images/rain.jpg" alt="" class="image" />
+                    <img src="images/14.jpg" alt="" class="image" />
                     <div class="image-data">
                         <span class="text">Enjoy the finest coffee drinks.</span>
                         <h2>
@@ -108,7 +115,7 @@
                     </div>
                 </div>
                 <div class="slide swiper-slide">
-                    <img src="Images/12.jpg" alt="" class="image" />
+                    <img src="images/naturewallpaper.jpg" alt="" class="image" />
                     <div class="image-data">
                         <span class="text">We really like what we do.</span>
                         <h2>
@@ -118,7 +125,7 @@
                     </div>
                 </div>
                 <div class="slide swiper-slide">
-                    <img src="Images/2.jpg" alt="" class="image" />
+                    <img src="images/wallpaperflare.jpg" alt="" class="image" />
                     <div class="image-data">
                         <span class="text">Making Our coffee with lover.</span>
                         <h2>
@@ -259,9 +266,9 @@
             </div>
         </section>
         <!--KHUNG 1-->
-        <section id="intro" class="gray-bg">
+        <section id="intro" class="info-frame">
             <div class="container">
-                <div class="tittle gray-bg">
+                <div class="info-title">
                     <h3>Take the photo</h3>
                 </div>
                 <div class="underline"></div>
@@ -300,10 +307,10 @@
 
         <!-- KHUNg 3 Gallery -->
 
-        <section id="gallery" class="gray-bg">
+        <section id="gallery" class="gallery-frame">
 
             <div class="container">
-                <div class="tittle">
+                <div class="gallery-tittle">
                     <h3>The stories</h3>
                     <div class="underline"></div>
                     <p style="color: #e79418; font-weight: 200;">More experiences</p>
@@ -383,69 +390,16 @@
             </div>
         </section>
 
-        <!--Email-->
+        <!--contact-->
 
-        <section id="contact" class="gray-bg">
+        <section id="contact" class="contact-frame">
             <div class="container">
-                <div class="tittle">
+                <div class="contact-tittle">
                     <h3>Tell me your stories</h3>
                     <div class="underline"></div>
                     <p style="color: #e79418; font-weight: 200;">Say Something</p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="contact-form box-shadow">
-                            <h4 style="color: rgb(226, 226, 226)">New Email</h4>
-                            <form id="contact-form" method="POST">
-                                <div class="row">
-                                    <!-- <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input name="Name" id="name" placeholder="Your Name *" class="form-control" type="text">
-                                            <span class="input-focus-effect theme-bg"></span>
-                                        </div>
-                                    </div> -->
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input name="Email" id="email" placeholder="From *" class="form-control" type="email">
-                                            <span class="input-focus-effect theme-bg "></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input name="Subject" id="mail_to" placeholder="To *" class="form-control" type="email">
-                                            <span class="input-focus-effect theme-bg"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input name="Subject" id="subject" placeholder="Subject *" class="form-control" type="text">
-                                            <span class="input-focus-effect theme-bg"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" placeholder="Your message *" rows="3" class="form-control"></textarea>
-                                            <span class="input-focus-effect theme-bg"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="send">
-                                            <button class="button_email" onclick="send_mail()" type="button" value="Send"><span> send</span></button>
-                                        </div>
-                                        <span id="suce_message" class="text-success" style="display: none">Message Sent Successfully</span>
-                                        <span id="err_message" class="text-danger" style="display: none">Message Sending Failed</span>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="contact_form2">
-                            <p style="color: aliceblue;">My email :....</p>
-                            <p style="color: aliceblue;">Address :.....</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
         <!--End Email-->
@@ -455,16 +409,6 @@
 <script>
     new WOW().init();
 </script>
-<!--script information-->
-<!-- 
-<script>
-    function more() {
-        document.getElementById("abc").style.display = "block";
-        // document.getElementById("abc").style thuoc tinh css phia sau
-    }
-</script> -->
-<!-- Swiper JS -->
-<script src="/static/js/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
@@ -489,36 +433,19 @@
         },
     });
 </script>
-<!-- <script>
-    var swiper = new Swiper(".mySwiper", {
-        speed: 1000,
-        parallax: true,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script> -->
+<!--go-to-top JS-->
+<script type="text/javascript">
+    window.addEventListener('scroll', function() {
+        var scroll = document.querySelector('.scrolltop');
+        scroll.classList.toggle("active", window.scrollY > 900)
+    })
 
-<!-- <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script> -->
+    function scrolltotop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+</script>
 
 </html>
