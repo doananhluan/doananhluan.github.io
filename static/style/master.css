@@ -1088,9 +1088,9 @@ a.button:hover {
 }
 
 .swiper-pagination-bullet-active {
-    border: 1px solid rgb(255, 255, 255);
+/*     border: 1px solid rgb(255, 255, 255); */
     background-color: #fc9b09;
-    transform: scale(1.3);
+    transform: scale(1.7);
 }
 
 @media screen and (max-width: 768px) {
