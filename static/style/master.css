@@ -1081,8 +1081,8 @@ a.button:hover {
 
 .swiper-pagination-bullet {
     opacity: 1;
-    height: 12px;
-    width: 12px;
+    height: 9px;
+    width: 9px;
     background-color: #fff;
     visibility: hidden;
 }
